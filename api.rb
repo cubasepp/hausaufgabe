@@ -17,10 +17,6 @@ class GivveApiAccess
     return do_get('vouchers/' + id + '/transactions')
   end
 
-  def get_customer(id)
-    return do_get('customers/' + id)
-  end
-
   def update_customer(voucher_id, id, first_name, last_name)
     return do_post('vouchers/' + voucher_id + '/owners/' + id,
       {'first_name': first_name, 'last_name': last_name},
