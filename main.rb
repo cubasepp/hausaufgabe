@@ -36,8 +36,8 @@ if options[:overview]
       puts "Found #{transactions.length} transactions" if transactions.length > 0
       transactions.each do |transaction|
         puts "\t Description" + transaction['description']
-        puts "\t\t Amount: " + transaction['amount']['cents'].to_s + \
-             transaction['amount']['currency']
+        puts "\t\t Amount: " + transaction['card_currency_amount']['cents'].to_s + \
+             transaction['card_currency_amount']['currency']
       end
     end
   end
