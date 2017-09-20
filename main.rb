@@ -12,7 +12,7 @@ OptionParser.new do |opts|
   opts.on('-t', '--transactions', 'List all cards with transactions') do |v|
     options[:transactions] = true
   end
-  opts.on('-u', '--update', 'Update user first last name. ') do |v|
+  opts.on('-u', '--update', 'Update users first and last name.') do |v|
     options[:update] = true
   end
 end.parse!
